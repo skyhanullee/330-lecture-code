@@ -15,7 +15,7 @@ module.exports.deleteById = (userId, transactionId) => {
 }
 
 module.exports.updateById = (userId, transactionId, newObj) => {
-  return Transaction.update({ _id: transactionId, userId }, newObj);
+  return Transaction.updateOne({ _id: transactionId, userId }, newObj);
 }
 
 module.exports.create = (transactionData) => {

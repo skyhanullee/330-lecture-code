@@ -15,7 +15,7 @@ module.exports.deleteById = (userId) => {
 }
 
 module.exports.updateById = (userId, newObj) => {
-  return User.update({ userId }, newObj);
+  return User.updateOne({ userId }, newObj);
 }
 
 module.exports.create = (userData) => {
